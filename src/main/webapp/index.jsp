@@ -16,8 +16,8 @@
     <input type="password" name="password"/>
     <input type="submit" value="login"/>
 </form>
-<%double num = Math.random();%>
-<%=num%>
-<%=request.getRequestURL()%>
+<%--<%double num = Math.random();%>--%>
+<%--<%=num%>--%>
+<%--<%=request.getRequestURL()%>--%>
 </body>
 </html>

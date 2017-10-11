@@ -39,7 +39,7 @@ public class StudentDAO {
         return studentList;
     }
 
-    public static Student getById(int id) throws StudentDAOException {
+    public static Student getStudentById(int id) throws StudentDAOException {
         Student student = null;
         try {
             Statement statement = manager.getConnection().createStatement();
@@ -59,7 +59,7 @@ public class StudentDAO {
         return student;
     }
 
-    public static void updateById(Student student) throws StudentDAOException {
+    public static void updateStudent(Student student) throws StudentDAOException {
         try {
             PreparedStatement statement = manager.getConnection().prepareStatement("UPDATE  student SET firstName = ?" +
                 ", lastName = ?, birth_date = ?, secondName = ?, group_id = ? WHERE id = ?");

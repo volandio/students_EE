@@ -7,15 +7,12 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page import="static StudentsWithJDBCAndDAO.DB.DAO.StudentDAO.deleteStudentById" %>
 
 <html>
 <head>
     <title>Students</title>
 </head>
 <body>
-<%--<%=request.getParameter("loginStudents")%>--%>
-
 <table>
     <tbody>
     <tr>
@@ -32,20 +29,10 @@
             <td><c:out value="${item.secondName}"/></td>
             <td><c:out value="${item.familyName}"/></td>
             <td><c:out value="${item.bdate}"/></td>
-
-            <td><a href= <%= deleteStudentById() %>"/${item.num}">Удалить</a></td>
-            <%--<input type="button" id="button" value="Кнопка"/>--%>
-            <%--<script>--%>
-                <%--button.onclick = function () {--%>
-                    <%--<%= deleteStudentById() %>--%>
-                <%--};--%>
-            <%--</script>--%>
-                <%--<form id="form1">--%>
-                <%--<button onclick= deleteS id="delete"> print OK</button>--%>
-                <%--</form>--%>
         </tr>
+    <a href="${pageContext.servletContext.contextPath}/edit?id=${item.num}">Редактировать</a>
+    <a href="${pageContext.servletContext.contextPath}/delete?id=${item.num}">Удалить</a>
     </c:forEach>
-    </tbody>
 </table>
 </body>
 </html>

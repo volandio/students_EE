@@ -8,17 +8,20 @@ public class Student implements Serializable {
     private String firstName;
     private String secondName;
     private String familyName;
-    private  LocalDate bdate;
+    private LocalDate bdate;
 
     public void setBdate(LocalDate bdate) {
         this.bdate = bdate;
+    }
+
+    public Student(String fName, String sName, String familyName, LocalDate bdate) {
+        this((short) 0, fName, sName, familyName, LocalDate.ofEpochDay(0));
     }
 
     public Student(short num, String fName, String sName, String familyName, LocalDate bdate) {
         this.num = num;
         this.firstName = fName;
         this.secondName = sName;
-
         this.familyName = familyName;
         this.bdate = bdate;
     }

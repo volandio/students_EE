@@ -28,13 +28,13 @@ public class Main {
 //        }
 //
 //        try {
-//            System.out.println(getById(2));
+//            System.out.println(getStudentById(2));
 //        } catch (StudentDAO.StudentDAOException e) {
 //            e.printStackTrace();
 //        }
 //        try {
 //        try {
-//            updateById(st2);
+//            updateStudent(st2);
 //        } catch (StudentDAO.StudentDAOException e1) {
 //            e1.printStackTrace();
 //        }
