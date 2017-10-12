@@ -44,7 +44,6 @@ public class UserDAOImpl implements UserDAO {
             if (statement.executeUpdate() == 1) {
                 return true;
             }
-
         } catch (SQLException e) {
             e.printStackTrace();
         }

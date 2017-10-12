@@ -61,7 +61,6 @@
         <servlet-name>StudentEditServlet</servlet-name>
         <servlet-class>servlets.StudentEditServlet</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>StudentEditServlet</servlet-name>
         <url-pattern>/edit</url-pattern>
@@ -71,10 +70,17 @@
         <servlet-name>StudentCreateServlet</servlet-name>
         <servlet-class>servlets.StudentCreateServlet</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>StudentCreateServlet</servlet-name>
         <url-pattern>/create</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>UserCreateServlet</servlet-name>
+        <servlet-class>servlets.CreateUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserCreateServlet</servlet-name>
+        <url-pattern>/userCreate</url-pattern>
+    </servlet-mapping>
 </web-app>

@@ -16,6 +16,7 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String login = req.getParameter("login");
         String password = req.getParameter("password");
+//        if ("test".equals(login) && "test".equals(password)) {
         if (as.auth(login, password)) {
             req.getSession().setAttribute("isAuth", true);
 //            req.getRequestDispatcher("/hello").forward(req, resp);

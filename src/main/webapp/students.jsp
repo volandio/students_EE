@@ -11,16 +11,18 @@
 <html>
 <head>
     <title>Students</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<table>
+<a href="${pageContext.servletContext.contextPath}/CreateStudent.jsp">Создать</a>
+<table class="tg">
     <tbody>
     <tr>
-        <th>Id</th>
-        <th>firstName</th>
-        <th>secondName</th>
-        <th>familyName</th>
-        <th>birth date</th>
+        <th width="80">Id</th>
+        <th width="120">firstName</th>
+        <th width="120">secondName</th>
+        <th width="120">familyName</th>
+        <th width="120">birth date</th>
     </tr>
     <c:forEach items="${list}" var="item">
         <tr>
@@ -33,7 +35,6 @@
             <td><a href="${pageContext.servletContext.contextPath}/delete?id=${item.num}">Удалить</a></td>
         </tr>
     </c:forEach>
-    <a href="${pageContext.servletContext.contextPath}/CreateStudent.jsp">Создать</a>
 </table>
 </body>
 </html>

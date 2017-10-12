@@ -15,6 +15,8 @@
     <input type="text" name="login"/>
     <input type="password" name="password"/>
     <input type="submit" value="login"/>
+    <td><a href="${pageContext.servletContext.contextPath}/userCreate">Создать User</a></td>
+
 </form>
 <%--<%double num = Math.random();%>--%>
 <%--<%=num%>--%>
