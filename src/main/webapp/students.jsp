@@ -29,10 +29,11 @@
             <td><c:out value="${item.secondName}"/></td>
             <td><c:out value="${item.familyName}"/></td>
             <td><c:out value="${item.bdate}"/></td>
+            <td><a href="${pageContext.servletContext.contextPath}/edit?id=${item.num}">Редактировать</a></td>
+            <td><a href="${pageContext.servletContext.contextPath}/delete?id=${item.num}">Удалить</a></td>
         </tr>
-    <a href="${pageContext.servletContext.contextPath}/edit?id=${item.num}">Редактировать</a>
-    <a href="${pageContext.servletContext.contextPath}/delete?id=${item.num}">Удалить</a>
     </c:forEach>
+    <a href="${pageContext.servletContext.contextPath}/CreateStudent.jsp">Создать</a>
 </table>
 </body>
 </html>

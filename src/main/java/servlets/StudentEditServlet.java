@@ -1,7 +1,7 @@
 package servlets;
 
-import StudentsWithJDBCAndDAO.DB.DAO.StudentDAO;
-import StudentsWithJDBCAndDAO.Pojo.Student;
+import DB.DAO.StudentDAO;
+import core.Pojo.Student;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.time.LocalDate;
 
-import static StudentsWithJDBCAndDAO.DB.DAO.StudentDAO.getStudentById;
-import static StudentsWithJDBCAndDAO.DB.DAO.StudentDAO.updateStudent;
+import static DB.DAO.StudentDAO.getStudentById;
+import static DB.DAO.StudentDAO.updateStudent;
 
 public class StudentEditServlet extends HttpServlet {
     @Override
@@ -37,6 +37,6 @@ public class StudentEditServlet extends HttpServlet {
         } catch (StudentDAO.StudentDAOException e) {
             e.printStackTrace();
         }
-        resp.sendRedirect(String.format(req.getContextPath(), "/web"));
+        resp.sendRedirect(String.format(req.getContextPath(), "/students"));
     }
 }

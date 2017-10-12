@@ -1,8 +1,8 @@
-package StudentsWithJDBCAndDAO.DB.DAO;
+package DB.DAO;
 
-import StudentsWithJDBCAndDAO.DB.ConnectionManagerPostgreSQL;
-import StudentsWithJDBCAndDAO.DB.IConnectionManager;
-import StudentsWithJDBCAndDAO.Pojo.Student;
+import DB.ConnectionManagerPostgreSQL;
+import DB.IConnectionManager;
+import core.Pojo.Student;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -117,7 +117,7 @@ public class StudentDAO {
         }
     }
 
-    public static void insertOne(Student student) throws StudentDAOException {
+    public static void insertStudent(Student student) throws StudentDAOException {
         try {
             PreparedStatement statement =
                 manager.getConnection().prepareStatement("INSERT INTO student (firstName, lastName, secondName, " +

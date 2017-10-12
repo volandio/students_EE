@@ -1,8 +1,8 @@
-package StudentsWithJDBCAndDAO;
+package core;
 
-import StudentsWithJDBCAndDAO.DB.DAO.StudentDAO;
+import DB.DAO.StudentDAO;
 
-import static StudentsWithJDBCAndDAO.DB.DAO.StudentDAO.getAll;
+import static DB.DAO.StudentDAO.getAll;
 
 public class Main {
     public static void main(String[] args) {

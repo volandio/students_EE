@@ -1,7 +1,7 @@
 package servlets;
 
-import StudentsWithJDBCAndDAO.DB.DAO.StudentDAO;
-import StudentsWithJDBCAndDAO.Pojo.Student;
+import DB.DAO.StudentDAO;
+import core.Pojo.Student;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-import static StudentsWithJDBCAndDAO.DB.DAO.StudentDAO.getAll;
+import static DB.DAO.StudentDAO.getAll;
 
 public class HelloServlet extends HttpServlet {
     @Override

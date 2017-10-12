@@ -1,4 +1,4 @@
-package StudentsWithJDBCAndDAO.Pojo;
+package core.Pojo;
 
 import java.io.Serializable;
 import java.util.HashSet;

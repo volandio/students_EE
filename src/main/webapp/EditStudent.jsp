@@ -39,7 +39,7 @@
             </td>
         </tr>
         <tr>
-            <td><input type="submit" align="center" value="Submit"/></td>
+            <td><input type="submit" align="center" value="Изменить"/></td>
         </tr>
     </table>
 </form>

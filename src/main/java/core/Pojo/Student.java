@@ -1,4 +1,4 @@
-package StudentsWithJDBCAndDAO.Pojo;
+package core.Pojo;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -15,7 +15,7 @@ public class Student implements Serializable {
     }
 
     public Student(String fName, String sName, String familyName, LocalDate bdate) {
-        this((short) 0, fName, sName, familyName, LocalDate.ofEpochDay(0));
+        this((short) 0, fName, sName, familyName, bdate);
     }
 
     public Student(short num, String fName, String sName, String familyName, LocalDate bdate) {
